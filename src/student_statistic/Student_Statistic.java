@@ -21,15 +21,15 @@ public class Student_Statistic {
         ArrayList<Integer> student = new ArrayList<Integer>();
         Scanner sn = new Scanner(System.in);
         System.out.println("Press any key for start program" );
-        for(check=0;check<7;check++){
+        for(check=0;check<13;check++){
             System.out.print("Enter Data Score of Student = ");
             student.add(sn.nextInt());   
-            if(check==6){
+            if(check==12){
                 for(int i = 0; i < student.size(); i++) {   
                     StatData stat = new StatData();
                      Collections.sort(student);
                     
-                    System.out.println("Score" + student.get(i)+"Median = "+stat.CalstatData(student));
+                    System.out.println("Score" + student.get(i) +"Median = "+stat.CalstatData(student));
                     //System.out.println("Median = "+stat.CalstatData(student));
                     //System.out.println("Range = "+stat.CalstatData(student));
                     
